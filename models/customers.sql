@@ -1,39 +1,12 @@
-set stmt =
-$$
-declare
-    radius_of_circle float;
-    area_of_circle float;
-begin
-    radius_of_circle := 3;
-    area_of_circle := pi() * radius_of_circle * radius_of_circle;
-    return area_of_circle;
-end;
-$$
-;
-
-execute immediate $stmt;
-
-
 with customers as (
 
-    select
-        c_custkey as customer_id,
-        c_name as first_name,
-        c_address as last_name
-
-    from "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1"."CUSTOMER"
+     select * from {{ ref('stg_customers') }}
 
 ),
 
 orders as (
 
-    select
-        O_ORDERKEY as order_id,
-        O_CUSTKEY as customer_id,
-        O_ORDERDATE as order_date,
-        O_ORDERSTATUS as status
-
-    from "SNOWFLAKE_SAMPLE_DATA"."TPCH_SF1"."ORDERS"
+    select * from {{ ref('stg_orders') }}
 
 ),
 
