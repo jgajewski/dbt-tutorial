@@ -11,8 +11,4 @@ sources:
     tables:
       - name: 'M1_DSIID_CMID_DS'
 
-  - name: 'SHARED_QUBOLE_AUDIENCES'
-    database: 'CLIENT_AMEX'
-    tables:
-      - name: 'N_bcp_'
 
