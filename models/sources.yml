@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: 'C3_SHARED'
+    database: 'CR_C3PROD_VIEWS'
+    tables:
+      - name: 'DS_IID_DELETES_DO_NOT_SELL'
+
+  - name: 'M1EE'
+    database: 'CLIENT_AMEX'
+    tables:
+      - name: 'M1_DSIID_CMID_DS'
+
+  - name: 'SHARED_QUBOLE_AUDIENCES'
+    database: 'CLIENT_AMEX'
+    tables:
+      - name: 'N_bcp_'

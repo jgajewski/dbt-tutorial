@@ -31,3 +31,9 @@ models:
           - relationships:
               to: ref('stg_customers')
               field: customer_id
+
+  - name: c3_compliant_M1_DSIID_CMID_DSXXXX
+    columns: 
+    - name: INDIVIDUAL_ID
+    - name: CMID
+

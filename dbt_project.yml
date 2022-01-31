@@ -34,13 +34,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   jaffle_project:
     # Applies to all files under models/
-    materialized: table
+    +materialized: view
     # Applies to all files under models/example/
     # example:
     #   materialized: view
+    M1EE:
+      +schema: M1EE
 
 vars:
-  SNOWFLAKETBLNAME: 'N_bcp_10_test_16cl'
+  SNOWFLAKETBLNAME: '10_test_16cl'
   FILENAME: 'N_bcp_10_test_16cl.tsv'
   FILEFORMATINBOUND: 'TAB_NOHEADER'
   FILEFORMATOUTBOUND: 'TAB_HEADER'
@@ -51,4 +53,5 @@ vars:
   SNOWFLAKESTAGEINBOUND: '@amex_in'
   SNOWFLAKESTAGEOUTBOUND: '@AMEX_M1_EXTRACT'
   SNOWFLAKESCHEMA2: 'M1EE'
-  CONSUMERCHOICE: '"CR_C3PROD_VIEWS"."C3_SHARED"."DS_IID_DELETES_DO-NOT-SELL"'
+  CONSUMERCHOICE: 'CR_C3PROD_VIEWS'
+
