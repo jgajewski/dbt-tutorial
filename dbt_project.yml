@@ -42,8 +42,8 @@ models:
       +schema: M1EE
 
 vars:
-  SNOWFLAKETBLNAME: '10_test_16cl'
-  FILENAME: 'N_bcp_10_test_16cl.tsv'
+  SNOWFLAKETBLNAME: 'Q1_2022_CMS_PlatinumHulu_T_Merkury_16cl'
+  FILENAME: 'Q1_2022_CMS_PlatinumHulu_T_Merkury_16cl.tsv.gz'
   FILEFORMATINBOUND: 'TAB_NOHEADER'
   FILEFORMATOUTBOUND: 'TAB_HEADER'
   LOADDATE: '2020-11-16'

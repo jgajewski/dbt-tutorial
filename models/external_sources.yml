@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+   - name: 'AMEX_INBOUND'
+     database: 'JAFFLE'
+     schema: 'PUBLIC'
+     loader: 'S3'
+     tables:
+     - name: 'M1_AUDIENCE_SOURCE'
+       external:
+          location: '@[JAFFLE.PUBLIC.DBT_TEST]'
+          file_format: 'JAFFLE.PUBLIC.TAB_NOHEADER'
+       columns:
+       - name: 'CMID'
+         data_type: 'VARCHAR'
