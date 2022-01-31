@@ -8,7 +8,7 @@ sources:
      tables:
      - name: 'M1_AUDIENCE_SOURCE'
        external:
-          location: '@[JAFFLE.PUBLIC.DBT_TEST]'
+          location: '@JAFFLE.PUBLIC.DBT_TEST'
           file_format: 'JAFFLE.PUBLIC.TAB_NOHEADER'
        columns:
        - name: 'CMID'

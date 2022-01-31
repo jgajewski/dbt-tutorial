@@ -40,6 +40,8 @@ models:
     #   materialized: view
     M1EE:
       +schema: M1EE
+    SHARED_QUBOLE_AUDIENCES:
+      +schema: SHARED_QUBOLE_AUDIENCES
 
 vars:
   SNOWFLAKETBLNAME: 'Q1_2022_CMS_PlatinumHulu_T_Merkury_16cl'
