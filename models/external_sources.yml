@@ -2,6 +2,7 @@ version: 2
 
 sources:
    - name: 'AMEX_INBOUND'
+     description: Snowflake External Stage containing AMEX M1 Audience data for conversion
      database: 'JAFFLE'
      schema: 'PUBLIC'
      loader: 'S3'
@@ -12,4 +13,8 @@ sources:
           file_format: 'JAFFLE.PUBLIC.TAB_NOHEADER'
        columns:
        - name: 'CMID'
+         description: AMEX Encrypted CMID
          data_type: 'VARCHAR'
+         tests:
+          - not_null
+          

@@ -7,11 +7,13 @@ sources:
     schema: 'PUBLIC'
     tables:
       - name: 'DS_IID_DELETES_DO_NOT_SELL'
+        description: Snowflake Share containing DS_IID values to scrub out for Compliance 
 
   - name: 'M1EE'
     #database: 'CLIENT_AMEX'
     database: 'JAFFLE'
     tables:
       - name: 'M1_DSIID_CMID_DS'
+        description: Snowflake Share of M1/DS_IID Crosswalk that supports translation of AMEX Encrypted CMID
 
 
