@@ -33,7 +33,20 @@ models:
               field: customer_id
 
   - name: c3_compliant_M1_DSIID_CMID_DSXXXX
+    description: Model that builds a compliant MID/DS_IID Crosswalk
     columns: 
     - name: INDIVIDUAL_ID
     - name: CMID
+
+  - name: SHARED_QUBOLE_AUDIENCES
+    description: Model that ingests and persists inbound AMEX M1 Audience data
+    columns: 
+    - name: CMID
+    - name: Load_Date
+    - name: FILENAME
+
+  - name: convert_cmid_to_M1ID
+    description: Model that translates AMEX Encrypted CMID M1 Audience data to DS_IID
+    columns: 
+    - name: IND_ID
 
