@@ -23,4 +23,9 @@ sources:
       - name: 'B2B'
         description: Snowflake Share of B2B Build source data
 
-
+  - name: 'DKB_ASSETS'
+    #database: 'CR_AMEX_CROSSWALK_SHARE'
+    database: 'JAFFLE'
+    tables:
+      - name: 'DKB_003_XWALK_COMPOSITE'
+        description: Snowflake Share of Composite Crosswalk
