@@ -15,5 +15,12 @@ sources:
     tables:
       - name: 'M1_DSIID_CMID_DS'
         description: Snowflake Share of M1/DS_IID Crosswalk that supports translation of AMEX Encrypted CMID
+      
+  - name: 'SHARED'
+    #database: 'CLIENT_AMEX'
+    database: 'JAFFLE'
+    tables:
+      - name: 'B2B'
+        description: Snowflake Share of B2B Build source data
 
 
